@@ -54,21 +54,20 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Menu</a>
+                <a class="nav-link" href="menu.html">Menu</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
               </li>
               
             </ul>
             <div class="user_option">
-              
-              <a href="login.html" class="order_online">
-                Ingresar
+              <a href="" class="order_online">
+                Order Online
               </a>
             </div>
           </div>
@@ -78,40 +77,57 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Inicio de sesión
+        </h2>
+      </div>
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Correo Electrónico" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Nombre" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Apellido" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Dirección" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Comuna" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Región" />
+              </div>
+              <div>
+                Fecha de nacimiento
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <a class="btn btn-warning btn-lg" href="index.html" role="button">Registrarme</a>
+              </div>
+            </form>
+            ¿Ya tienes cuenta? <a href="login.html" class="link">Iniciar Sesión</a>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                Bienvenido a  ElgrupoDelivery
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
+          <img src="images/chayanne-rosas.png" class="img-fluid" alt="...">
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- end about section -->
+
+
+  </section>
+  <!-- end book section -->
 
   <!-- footer section -->
   <footer class="footer_section">

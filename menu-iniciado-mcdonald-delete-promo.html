@@ -29,6 +29,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
 </head>
 
 <body class="sub_page">
@@ -41,30 +43,92 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index-iniciado-admin-mcdonald.html">
             <span>
               ElgrupoDelivery
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index-iniciado-admin-mcdonald.html">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="menu-iniciado-mcdonald.html">Menu <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="about-iniciado.html">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              
             </ul>
-            
+            <div class="user_option">
+              <a class="cart_link" href="cart.html">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="index.html" class="order_online">
+                Cerrar sesión
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -72,57 +136,85 @@
     <!-- end header section -->
   </div>
 
-  <!-- book section -->
-  <section class="book_section layout_padding">
+  <!-- food section -->
+
+  <section class="food_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container heading_center">
         <h2>
-          Inicio de sesión
+          Restaurantes
         </h2>
+        <a href="menu-iniciado-mcdonald-form-promo.html" style="color: white;" type="button" class="btn col-6 btn-success btn-lg"><span class="material-icons">add</span>Añadir promoción</a>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
+      <ul class="filters_menu">
+        <li data-filter=".mcdonalds">McDonald's</li>
+      </ul>
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all mcdonalds">
+            <div class="box">
               <div>
-                <input type="text" class="form-control" placeholder="Correo Electrónico" />
+                <div class="img-box"  href="menu.html">
+                  <img src="https://cache-mcd-ecommerce.appmcdonalds.com/images/CL/DLV_26289.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <p> <span class="material-icons">
+                    star_rate
+                  </span> 3.9</p>
+                  <h5>
+                    McCrispy Fillet Smokey BBQ 
+                  </h5>
+                  <p>
+                    McCombo Mediano McCrispy Smokey BBQ  
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $20.990
+                    </h6>
+                    
+                  </div>
+                  Restaurant: McDonald's
+                </div>
+                
               </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Nombre" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Apellido" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Dirección" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Comuna" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Región" />
-              </div>
-              <div>
-                Fecha de nacimiento
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <a class="btn btn-warning btn-lg" href="index.html" role="button">Registrarme</a>
-              </div>
-            </form>
-            ¿Ya tienes cuenta? <a href="login.html" class="link">Iniciar Sesión</a>
+              
+            </div>
+            
           </div>
-        </div>
-        <div class="col-md-6">
-          <img src="images/chayanne-rosas.png" class="img-fluid" alt="...">
-        </div>
+          <div class="col-sm-6 col-lg-4 all mcdonalds">
+            <div  class="box">
+              <div>
+                <a href="detail-mcdonald.html" class="img-box">
+                  <img src="https://cache-mcd-ecommerce.appmcdonalds.com/images/CL/DLV_4480.png" alt="">
+                </a>
+                <div class="detail-box">
+                  <p> <span class="material-icons">
+                    star_rate
+                  </span> 3.8</p>
+                  <a  style="color: white;">
+                    <h5>
+                      Club House 2 carnes
+                    </h5>
+                  </a>
+                  <a>
+                    Hamburguesa Doble 100% carne, salsa Bigmac, cebolla grillada, tomate, lechuga, tocino y queso
+                  </a>
+                  <div class="options">
+                    <h6>
+                      $10.990
+                    </h6>
+                  </div>
+                  Restaurant: McDonald's
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+      
     </div>
-
-
-
   </section>
-  <!-- end book section -->
+
+  <!-- end food section -->
 
   <!-- footer section -->
   <footer class="footer_section">

@@ -29,8 +29,10 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
 </head>
 
 <body class="sub_page">
@@ -43,29 +45,32 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index-iniciado-admin-mcdonald.html">
+          <a class="navbar-brand" href="index-iniciado-cliente.html">
             <span>
               ElgrupoDelivery
             </span>
           </a>
 
-          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="index-iniciado-admin-mcdonald.html">Home </a>
+                <a class="nav-link" href="index-iniciado-cliente.html">Home </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="menu-iniciado-mcdonald.html">Menu <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="menu-iniciado.html">Menu <span class="sr-only"></span> </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about-iniciado.html">About</a>
               </li>
             </ul>
             <div class="user_option">
+              <a href="compras.html" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
               <a class="cart_link" href="cart.html">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
@@ -136,93 +141,71 @@
     <!-- end header section -->
   </div>
 
-  <!-- food section -->
+  <!-- cart section -->
 
-  <section class="food_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Restaurantes
-        </h2>
-        <a href="menu-iniciado-mcdonald-form-promo.html" style="color: white;" type="button" class="btn col-6 btn-success btn-lg"><span class="material-icons">add</span>Añadir promoción</a>
-      </div>
-      <ul class="filters_menu">
-        <li data-filter=".mcdonalds">McDonald's</li>
-      </ul>
-      <div class="heading_container filters-content heading_center all mcdonalds">
-        <h4>
-          Todos los martes, 2X1 en McDonald's
-          <a href="menu-iniciado-mcdonald-form-promo.html">
-            <span class="material-icons">
-              edit
-            </span> 
-          </a>
-          <a href="menu-iniciado-mcdonald-delete-promo.html">
-            <span class="material-icons">
-              delete
-            </span> 
-          </a>
-        </h4>
-      </div>
-      <div class="filters-content">
-        <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all mcdonalds">
-            <div class="box">
-              <div>
-                <div class="img-box"  href="menu.html">
-                  <img src="https://cache-mcd-ecommerce.appmcdonalds.com/images/CL/DLV_26289.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <p> <span class="material-icons">
-                    star_rate
-                  </span> 3.9</p>
-                  <h5>
-                    McCrispy Fillet Smokey BBQ 
-                  </h5>
-                  <p>
-                    McCombo Mediano McCrispy Smokey BBQ  
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $20.990
-                    </h6>
-                    
-                  </div>
-                  Restaurant: McDonald's
-                </div>
-              </div>
+  <section class="h-100" style="background-color: #eee;">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">
+  
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+            <div>
+              <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
+                    class="fas fa-angle-down mt-1"></i></a></p>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all mcdonalds">
-            <div  class="box">
-              <div>
-                <a href="detail-mcdonald.html" class="img-box">
-                  <img src="https://cache-mcd-ecommerce.appmcdonalds.com/images/CL/DLV_4480.png" alt="">
-                </a>
-                <div class="detail-box">
-                  <p> <span class="material-icons">
-                    star_rate
-                  </span> 3.8</p>
-                  <a  style="color: white;">
-                    <h5>
-                      Club House 2 carnes
-                    </h5>
-                  </a>
-                  <a>
-                    Hamburguesa Doble 100% carne, salsa Bigmac, cebolla grillada, tomate, lechuga, tocino y queso
-                  </a>
-                  <div class="options">
-                    <h6>
-                      $10.990
-                    </h6>
-                  </div>
-                  Restaurant: McDonald's
+          
+          <!-- Carta carrito -->
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <!-- <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="https://assets.niusushi.cl/production/images/7acf325c-fe8a-42f8-804a-b173d7dea72e/large/hit-4-premium.webp?1673210755"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
                 </div>
-              </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Hit para 4 Premium (45 piezas)</p>
+                  <p><span class="text-muted">Tienda: </span>Niu Sushi
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">Valor: $10.990</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div> -->
+              <h4 style="text-align: center;">Tu carrito está vacío :(</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h6 style="text-align: end;">Precio envío: $1.649 </h6>
+                <h6 style="text-align: end;">Total a pagar: $12.639 </h6>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://bio-ciclo.cl/wp-content/uploads/2023/01/logo-web-pay-plus-1024x460-1-1.png" class="card-img-top" alt="...">
+                </div>
+                <a type="button" href="book-iniciado.html" class="btn btn-warning btn-block btn-lg disabled" >Proceder al pago</a>
             </div>
           </div>
+  
+        </div>
       </div>
-      
     </div>
   </section>
 
@@ -267,23 +250,6 @@
             <p>
               Somos ElGrupoDelivery y esperamos que disfrutes tu comida ;)
             </p>
-            <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
-              </a>
-            </div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
